@@ -31,4 +31,4 @@ def pull_files(self):
         return foundFileList
     except Exception as e:
         logging.error('Error in pull_files method: {}'.format(str(e)))
-        return None￼Enter
+        return None
