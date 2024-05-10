@@ -1,0 +1,49 @@
+2024-05-10T11:43:50.356455141Z INFO: root: Contents of datelist:
+
+[time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=2, tm_min=32, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1), time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=2, tm_min=32, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=4, tm_min=2, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1), time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=4, tm_min=3, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1), tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=4, tm_min=10, time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=4, tm_min=10, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=4, tm_min=33, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=4, tm_min=33, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1), time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=5, tm_min=27, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=5, tm_min=33, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1), time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=5, tm_min=30, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=5, tm_min=30, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1), time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=6, tm_min=5, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1),
+
+time.struct_time(tm_year=2024, tm_mon=5, tm_mday=5, tm_hour=6, tm_min=8, tm_sec=0, tm_wday=6, tm_yday=126, tm_isdst=-1)]
+
+2024-05-10T11:43:50.356527303Z INFO:root: Contents of filelist:
+
+[ '20240505_Sec_Cond1_AU.xls',
+
+20240505_Sec_Cond2_AU.xls',
+
+20240505_Sec_Cond1_SD.xls',
+
+20240505_Sec_Cond2_SD.xls"
+
+20240505_Sec_Cond1_DV.xls"
+
+20240505_Sec_Cond2_DV.xls'
+
+' '
+
+' 20240505_Sec_Cond1_IR.xls'
+
+'20240505_Sec_Cond2_IR.xls'
+
+20240505_Sec_Cond1_NT.xls'
+
+'20240505_Sec_Cond2_NT.xls'
+
+'20240505_Sec_Cond1 SO.xls'
+
+'20240505_Sec_Cond2_SO.xls'
+
+20240505 Sec_Cond1_EM.xls'
+
+20240505_Sec_Cond2_EM.xls']
