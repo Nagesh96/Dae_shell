@@ -1,41 +1,55 @@
-def batch_log_error(self, error_summary):
+def get_data(self):
 
-logging.info('Started Security Detail came to batch_log_error method')
+logging.info('came to get_data method Started Security Detail download process")
 
-engine create_engine('mssql+pyodbc:///?odbc_connect=%s' % self.params, fast_executemany=True)
+filelist=[]
 
-batch_id= str(self.batch_id)
-
-logging.info('Started Security Detail came to batch_log_success method batch_id: '+ str(batch_id))
-
-self.error_status True
-
-exec_string =
-
-DECLARE @curDate datetime2(7)
-
-SET @curDate CURRENT_TIMESTAMP
-
-UPDATE [daedbo].[dae_fabi_batch_log] set s_batch_end_date = @curDate where i_batch_id = ?
-
-UPDATE [daedbo].[dae_fabi_batch_log] set t_batch_status = 'ERROR' where i_batch_id = ? UPDATE [daedbo].[dae_fabi_batch_log] set t_batch_error_msg = ? where i_batch_id = ?
+to = time.time()
 
 try:
 
-connection engine.raw_connection()
+ftp_hostos.environ.get('FTP_SERVER')
 
-cursor connection.cursor()
+logging.info('Security Detail- ftp_host: '+str(ftp_host))
 
-cursor.execute(exec_string, (batch_id, batch_id, error_summary, batch_id))
+ftp_pass os.environ.get('FTP_PASSWORD')
 
-cursor.commit()
+#logging.info('Security Detail ftp_pass: '+ str(ftp_pass))
 
-connection.close()
+ftp_user= os.environ.get('FTP_USERNAME')
 
-except Exception as e:
+logging.info("Security Detail- ftp_user: + str(ftp_user))
 
-logging.info('Started Security Detail came to batch_log_error exception is: '+ str(e))
+foftplib.FTP(ftp_host)
 
-logging.exception('Exception on batch log error update')
+f.login(user-ftp_user, passwd=ftp_pass)
 
-self.batch_log_error(str(e))
+f.cwd('/ftp-fund/Capacity Model/)
+
+#print("FTP Login Success')
+
+logging.info('FTP Login Success')
+
+except ftplib.error_perm as error:
+
+if error:
+
+#print('FTP Login Failed")
+
+logging.info('FTP Login Failed')
+
+data = []
+
+f.dir(data.append) datelist = []
+
+currentyear str(datetime.datetime.today().year)
+
+logging.info('Security Detail get data method currentYear+ str(currentYear))
+
+today datetime.date.today()
+
+weekday 1 today.weekday() +1%7
+
+sunday date today datetime.timedelta(weekday_1) sunday date sunday_date.strftime("%d")
+
+logging.info('Security Detail get data method-sunday date is str(sunday_date))
