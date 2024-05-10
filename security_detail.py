@@ -103,3 +103,17 @@ class SecurityDetail:
         sunday_date = today - datetime.timedelta(weekday_1) 
         sunday_date = sunday_date.strftime("%Y%m%d")
         logging.info('Security Detail get data method-sunday date is' + str(sunday_date))
+        
+        data = [file for file in data if sunday_date in file and 'Sec_Cond' in file]
+        logging.info('Security Detail -get_data method data is' + str(data))
+
+        for line in data:
+            col = line.split()
+            datestr = ' '.join(line.split() [0:2])
+            date = time.strptime (datestr, '%m-%d-%y %H:%M%p')
+            datelist.append(date)
+            logging.info('Security Detail File names are is' + str(col[3]))
+            filelist.append(col[3])
+        logging.info('Security Detail -get_data method filelist is: '+ str(filelist))
+        combo = zip(datelist, filelist)
+        who = dict(combo) 
