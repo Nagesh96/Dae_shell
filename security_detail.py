@@ -73,3 +73,33 @@ class SecurityDetail:
             logging.exception('Exception on batch log error update')
             self.batch_log_error(str(e))
         return
+    def get_data(self):
+        logging.info('came to get_data method Started Security Detail download process')
+        filelist=[]
+        t0 = time.time()
+        try:
+            ftp_host = os.environ.get('FTP_SERVER')
+            logging.info('Security Detail- ftp_host: '+str(ftp_host))
+            ftp_pass = os.environ.get('FTP_PASSWORD')
+            #logging.info('Security Detail ftp_pass: '+ str(ftp_pass))
+            ftp_user= os.environ.get('FTP_USERNAME')
+            logging.info("Security Detail- ftp_user:" + str(ftp_user))
+            f = ftplib.FTP(ftp_host)
+            f.login(user=ftp_user, passwd=ftp_pass)
+            f.cwd('/ftp-fund/Capacity Model/')
+            #print("FTP Login Success')
+            logging.info('FTP Login Success')
+        except ftplib.error_perm as error:
+            if error:
+                #print('FTP Login Failed")
+                logging.info('FTP Login Failed')
+        data = []
+        f.dir(data.append) 
+        datelist = []
+        currentyear = str(datetime.datetime.today().year)
+        logging.info('Security Detail get data method currentYear' + str(currentyear))
+        today = datetime.date.today()
+        weekday_1 =  today.weekday() +1 % 7
+        sunday_date = today - datetime.timedelta(weekday_1) 
+        sunday_date = sunday_date.strftime("%Y%m%d")
+        logging.info('Security Detail get data method-sunday date is' + str(sunday_date))
