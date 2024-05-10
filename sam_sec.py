@@ -1,55 +1,25 @@
-def get_data(self):
+data = [file for file in data if sunday_date in file and 'Sec_Cond' in file]
 
-logging.info('came to get_data method Started Security Detail download process")
+logging.info('Security Detail -get_data method data is + str(data))
 
-filelist=[]
+for line in data:
 
-to = time.time()
+col line.split()
 
-try:
+datestr'.join(line.split() [0:2])
 
-ftp_hostos.environ.get('FTP_SERVER')
+date time.strptime (datestr, '%m-%d-%y %H:%M%p')
 
-logging.info('Security Detail- ftp_host: '+str(ftp_host))
+datelist.append(date)
 
-ftp_pass os.environ.get('FTP_PASSWORD')
+logging.info('Security Detail File names are is+ str(col[3]))
 
-#logging.info('Security Detail ftp_pass: '+ str(ftp_pass))
+filelist.append(col[3])
 
-ftp_user= os.environ.get('FTP_USERNAME')
+logging.info('Security Detail -get_data method filelist is: '+ str(filelist))
 
-logging.info("Security Detail- ftp_user: + str(ftp_user))
+combo zip(datelist, filelist)
 
-foftplib.FTP(ftp_host)
+logging.info('Security Detail line -126 combo is: '+ str(combo))
 
-f.login(user-ftp_user, passwd=ftp_pass)
-
-f.cwd('/ftp-fund/Capacity Model/)
-
-#print("FTP Login Success')
-
-logging.info('FTP Login Success')
-
-except ftplib.error_perm as error:
-
-if error:
-
-#print('FTP Login Failed")
-
-logging.info('FTP Login Failed')
-
-data = []
-
-f.dir(data.append) datelist = []
-
-currentyear str(datetime.datetime.today().year)
-
-logging.info('Security Detail get data method currentYear+ str(currentYear))
-
-today datetime.date.today()
-
-weekday 1 today.weekday() +1%7
-
-sunday date today datetime.timedelta(weekday_1) sunday date sunday_date.strftime("%d")
-
-logging.info('Security Detail get data method-sunday date is str(sunday_date))
+who = dict(combo) logging.info('Security Detail line -128 who is + str(who))
