@@ -102,6 +102,62 @@ logging.info('Security Detail- get_data method came to Exception')
 
 logging.info('Security Detail File is + str(file)) logging.info('Security Detail error on + str(e))
 
+
+
+df df [['FND_CU', 'FND_SU', 'FND_SD', 'FND_TC', 'FND_U0']]
+
+step_18') logging.info('Security Detail get_data method
+
+logging.info('Security Detail df is: '+ str(df))
+
+logging.info('Security Detail file[33:35] is:'+str(file[33:35]))
+
+logging.info('Security Detail-- get_data method step_20')
+
+df['userbank'] = file [33:35]
+
+dfdf.drop_duplicates (keep='first')
+
+final_df final_df.append(df)
+
+step_21') logging.info('Security Detail-- get_data method logging.info('Security Detail before final_df is+str(final_df))
+
+step_22') logging.info('Security Detail-- get_data method
+
+logging.info('Security Detail get_data method df is: '+ str(df))
+
+logging.info('Security Detail get_data method step_23')
+
+logging.info('Security Detail get_data method step_24')
+
+except Exception as e:
+
+logging.info('Security Detail try blockk exception is + str(e))
+
+logging.info('Security Detail Came to get_data filelist except block')
+
+logging.info('Security Detail-- get_data method step_25')
+
+final_df final_df.drop_duplicates (keep='first', subset=['FND_CU', 'FND_SU', 'userbank'])
+
+logging.info('Security Detail after step_8-- final_df is+ str(final_df))
+
+logging.info('Security Detail-- get_data method step_26') logging.info('Completed Security Detail download and parsing')
+
+logging.info('Security Detail-- going to return finally')
+
+return final df
+
+except Exception as e:
+
+logging.info('Security Detail exception is: '+ str(e))
+
+logging.info('Security Detail Came to get data filelist except block')
+
+logging.exception('Exception occurred on downloading and parsing Security Detail')
+
+self.batch_log_error(str(e))
+
 except Exception as e:
 
 logging.info('Security Detail get_data method came to 1st EXCEPT block') logging.info('Security Detail Error on opening/reading the file: '+ str(file))
