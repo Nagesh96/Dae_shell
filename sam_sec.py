@@ -95,3 +95,49 @@ logging.info('Security Detail get_data method came to UnicodeDecodeError')
 logging.info('Security Detail File is + str(file))
 
 logging.info('Security Detail UnicodeDecodeError. + str(e))
+
+except Exception as e:
+
+logging.info('Security Detail- get_data method came to Exception')
+
+logging.info('Security Detail File is + str(file)) logging.info('Security Detail error on + str(e))
+
+except Exception as e:
+
+logging.info('Security Detail get_data method came to 1st EXCEPT block') logging.info('Security Detail Error on opening/reading the file: '+ str(file))
+
+logging.info('Security Detail File has issue: '+ str(e))
+
+logging.info('Security Detail- get_data method step_1_1')
+
+text1 text[0]
+
+logging.info('Security Detail before delete text:')
+
+del(text)
+
+logging.info('Security Detail after delete text: ')
+
+logging.info('Security Detail- get_data method step_1_2')
+
+for i in range(0,len(text1)): if text1[i].startswith('<TR>'):
+
+for x in text1[i+1:i+18]:
+
+if x.startswith('<TD class=x1101>'):
+
+header.append(x[16:-6])
+
+else:
+
+body.append(x[16:-6])
+
+logging.info('Security Detail first for loop completed') logging.info('Security Detail get_data method step_14')
+
+step_15') composite_list = [body [x:x+17] for x in range(0, len(body),17)]
+
+logging.info('Security Detail get_data method df pd.DataFrame(composite_list, columns=header) # convert to dataframe
+
+logging.info('Security Detail after step_16df is: '+ str(df))
+
+logging.info('Security Detail-- get_data method step_17')
