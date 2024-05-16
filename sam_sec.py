@@ -1,49 +1,43 @@
 try:
 
-logging.info('Security Detail Came to try block')
+logging.info('Security Detail -get_data method Came to filelist try block_step_4')
 
-logging.info('Security Detail line -131 who is + str(who))
+filelist = []
 
-for key in who:
+DVlist [file for file in files if 'DV' in file]
 
-logging.info('Security Detail line -133 key is + str(key)) f.retrbinary('RETR %s' % who [key], open (who [key], 'wb').write)
+logging.info('Security Detail -get_data method DVlist is: '+ str(DVlist))
 
-logging.info('Security Detail line -138 file going to before quit')
+NTlist [file for file in files if 'NT' in file]
 
-f.quit()
+logging.info('Security Detail -get_data method NTlist is: '+str(NTlist)) SDlist [file for file in files if 'SD' in file]
 
-logging.info('Security Detail file going to after quit')
+logging.info('Security Detail -get_data method SDlist is: '+str(SDlist))
 
-if f.close:
+IRlist [file for file in files if 'IR' in file]
 
-logging.info('Security Detailif file closed')
+logging.info('Security Detail get_data method IRlist is: '+str(IRlist))
 
-else:
+EMlist = [file for file in files if 'EM' in file]
 
-logging.info('Security Detail else file is NOT closed')
+logging.info('Security Detail -get_data method EMlist is: '+ str(EMlist))
 
-logging.info('Security Detail file completed last line')
+filelist.append(DVlist[0:2])
 
-logging.info('Security Detail Came to try block_step_1')
+logging.info('Security Detail -get_data method DVlist filelist is_step_5: '+ str(filelist))
 
-files_path= os.path.join(os.getcwd(), sunday_date + '*Sec_Cond*.xls')
+filelist.append(NTlist[0:2])
 
-logging.info('Security Detail -get_data method line 151 files_path is_step_2: '+ str(files_path))
+logging.info('Security Detail -get_data method NTlist filelist is_step_6: '+ str(filelist))
 
-files sorted (
+filelist.append(SDlist[0:2 ])
 
-glob.iglob(files_path), key=os.path.getctime, reverse=True)
+logging.info('Security Detail -get_data method SDlist filelist is_step_7: '+ str(filelist))
 
-logging.info('Security Detail -get_data method line-154 files is_step_3: '+ str(files)) except Exception as e:
+filelist.append(IRlist[0:2])
 
-logging.info('Security Detail Came to except block')
+logging.info('Security Detail -get_data method IRlist filelist is_step_8: '+ str(filelist))
 
-logging.info('Security Detail exception is: '+ str(e))
+filelist.append(EMlist[0:2])
 
-logging.exception('Exception on downloading Security Detail files')
-
-self.batch_log_error(str(e))
-
-logging.exception('Security Detail Came to except block going to RETURN something')
-
-return
+logging.info('Security Detail -get_data method- EMlist filelist is_step_9: '+ str(filelist))
