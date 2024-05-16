@@ -41,3 +41,57 @@ logging.info('Security Detail -get_data method IRlist filelist is_step_8: '+ str
 filelist.append(EMlist[0:2])
 
 logging.info('Security Detail -get_data method- EMlist filelist is_step_9: '+ str(filelist))
+
+filelist [item for sub in filelist for item in sub]
+
+logging.info('Security Detail -get_data method item for sub in filelist for item in sub- filelist is_step_10: '+ str(filelist))
+
+final_df pd.DataFrame()
+
+logging.info('Security Detail final_df is_step_11: '+ str(final_df))
+
+try:
+
+logging.info('Security Detail came to try blockkkk_step_13')
+
+for file in filelist:
+
+logging.info('Security Detail file name is_1+ str(file))
+
+header = []
+
+body = []
+
+text = []
+
+try:
+
+try:
+
+try:
+
+logging.info('Security Detail get_data method came to 1st try block')
+
+logging.info('Security Detail get data method came to 2nd try block')
+
+logging.info('Security Detail get_data method with open (file, 'r', errors = 'replace') as fo: came to 3rd try block')
+
+text.append(fo.readlines())
+
+logging.info('Security Detail get_data method before file going to close')
+
+fo.close()
+
+logging.info('Security Detail get_data method - after file going to close')
+
+logging.info('Security Detail Length of text: '+str(len(text)))
+
+logging.info('Security Detail text LIST size is+str(sys.getsizeof(text)))
+
+except Exception as e:
+
+logging.info('Security Detail get_data method came to UnicodeDecodeError')
+
+logging.info('Security Detail File is + str(file))
+
+logging.info('Security Detail UnicodeDecodeError. + str(e))
